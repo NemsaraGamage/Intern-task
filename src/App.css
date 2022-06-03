@@ -1,0 +1,228 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family:'YanoneKaffeesatz-Bold';
+  src: url(fonts/YanoneKaffeesatz-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src: url(fonts/RobotoCondensed-Bold.ttf);
+}
+
+/* Navbar */
+
+.navbar{
+
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 1px 8px rgba(146,161,176,.9);
+
+}
+
+.navbar ul{
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+.navbar li{
+
+  font-family:"BebasNeue-Regular" ;
+  margin-left: 2.5rem;
+
+}
+
+.navbar ul li a{
+
+  font-size: 30px;
+  color: #0E2431;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+
+}
+
+/* main body */
+
+.boxes-container{
+
+  position: absolute;
+  width: 100%;
+  margin: 80px 0 0 0;
+
+}
+
+.tasks, .valueTasks{
+
+  background-color: CadetBlue;
+  width: 360px;
+  height: 400px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 7.5%;
+  float: left;
+
+}
+
+.tasks h2, .valueTasks h2{
+  font-family: "YanoneKaffeesatz-Bold";
+  font-size: 45px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  color: #fff;
+}
+
+/* form */
+
+label{
+  margin: 60px 0 0 93px;
+  font-size: 14px;
+  font-family: 'RobotoCondensed-Bold';
+}
+
+.TextBox{
+  margin: 10px 0 0 37px;
+  width: 290px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.Btn, .dbBtns{
+  margin: 30px 0 0 130px;
+  border-radius: 5px;
+  font-family: 'RobotoCondensed-Bold';
+  border: none;
+  padding: 6px;
+  width: 100px;
+  transition: 0.50s;
+}
+
+.Btn:hover{
+  background-color: black;
+  color: #fff;
+}
+
+.validationt{
+  margin: 70px 0 0 0;
+  text-align: center;
+  font-family: 'RobotoCondensed-Bold';
+  color: #fff;
+  font-size: 18px;
+}
+
+.valueTasks{
+  height: 0%;
+}
+
+.savedLable{
+  padding-bottom: 28px;
+}
+
+/* Retriving the values */
+
+.dbValue{
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  font-family: 'RobotoCondensed-Bold';
+  margin-bottom: 0;
+  
+}
+
+.dbBtns{
+  width: 70px;
+  margin: 0 0 30px 73px;
+  padding: 2px;
+}
+
+
+/* Reactive */
+
+@media (max-width: 1003px) { 
+
+  .tasks{
+  
+    margin-left:8%;
+  
+  }
+
+}
+
+@media (max-width: 920px) { 
+
+  .tasks{
+
+    margin-left: 6.5%;
+  
+  }
+
+}
+
+@media (max-width: 858px) { 
+
+  .tasks{
+    
+    margin-left:4.7%;
+  
+  }
+
+}
+
+@media (max-width: 764px) { 
+
+  .tasks{
+    margin-left: 13.5%;
+  
+  }
+
+}
+
+
+/* iphone 8+ */
+@media (max-width: 450px) { 
+
+  .navbar ul{
+    margin-left: 0;
+  
+  }
+
+  .navbar ul li a{
+
+    font-size: 24px;
+  
+  }
+
+  
+
+
+  /* tasks */
+
+  .tasks{
+
+    margin-left: 5%;
+  
+  }
+
+}
